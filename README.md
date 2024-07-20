@@ -1,6 +1,6 @@
-# 🌐 Fullstack Web Development Assignment (MERN)
+# 🌐 Froker-Clone (MERN)
 
-![Project Screenshot]("/image/1.png")
+![Project Screenshot](/image/1.png)
 
 ## 📋 Overview
 Welcome to the Fullstack Web Development Assignment! This project is a clone of the blog page found at Froker Blogs, built using the powerful MERN stack. This README will guide you through the project requirements, setup, and deployment instructions.
@@ -87,25 +87,25 @@ Welcome to the Fullstack Web Development Assignment! This project is a clone of 
 Include some screenshots of your application here. For example:
 
 ### Home Page
-![Home Page]("/image/home.png")
+![Home Page](/image/home.png)
 
 ### Blog Page
-![Blog Page]("/image/1.png")
+![Blog Page](/image/1.png)
 
 ### Blog Individual Page
-![Blog Individual Page]("/image/5.png")
+![Blog Individual Page](/image/5.png)
 
 ### Discover Froker
-![Discover Froker]("/image/discover.png")
+![Discover Froker](/image/discover.png)
 
 ### Like Functionality
-![Like Functionality]("/image/6.png")
+![Like Functionality](/image/6.png)
 
 ### Popular Posts
 ![Popular Posts](/image/7.png)
 
 ### Newsletter Subscription
-![Newsletter Subscription]("/image/3.png")
+![Newsletter Subscription](/image/3.png)
 
 ## 🌍 Hosting
 
