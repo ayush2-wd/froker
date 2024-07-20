@@ -24,9 +24,11 @@ mongoose.connect(mongoURI, {
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('Error connecting to MongoDB:', err));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend/public/index.html'));
-  });
+  app.use(express.static(path.join(__dirname, '..', 'frontend', 'public')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'frontend', 'public', 'index.html'));
+});
   
 app.get('/api/blogs', async (req, res) => {
   try {
