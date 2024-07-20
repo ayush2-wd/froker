@@ -1,4 +1,3 @@
-// backend/index.js
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
@@ -8,7 +7,6 @@ const Blog = require('./models/Blog');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
@@ -17,17 +15,15 @@ if (!mongoURI) {
   throw new Error("MONGO_URI environment variable not set");
 }
 
-// MongoDB connection
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  tls: true, // Enable TLS/SSL
-  tlsAllowInvalidCertificates: true, // Disable certificate validation (only for local testing)
+  tls: true, 
+  tlsAllowInvalidCertificates: true,
 })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('Error connecting to MongoDB:', err));
 
-// Routes
 app.get('/api/blogs', async (req, res) => {
   try {
     const blogs = await Blog.find();
@@ -60,5 +56,4 @@ app.post('/api/blogs/:id/like', async (req, res) => {
   }
 });
 
-// Start the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -2,12 +2,12 @@
   "engines":{"node":"18.20.3"},
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1", 
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "npm install --prefix ./frontend &&  npm run build"
+
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
