@@ -1,0 +1,35 @@
+/* src/styles/custom.css */
+
+.bloggimg {
+    @apply w-full h-[36vh] bg-orange-500 flex justify-center items-center;
+}
+
+.blogimg4 {
+    @apply w-full h-full object-cover rounded-lg;
+}
+
+.blogss {
+    @apply w-full h-full pt-2 grid grid-cols-3 gap-4;
+}
+
+.blogcontent {
+    @apply flex items-start w-full; /* Align items to the start */
+}
+
+.booxx {
+    @apply w-full no-underline pl-20 flex flex-col;
+}
+
+.pagging {
+    @apply pt-12 cursor-pointer px-16 flex justify-center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .blogss {
+        @apply grid-cols-1; /* Adjust grid to a single column on smaller screens */
+    }
+    .pagging {
+        @apply mt-4 px-4; /* Adjust padding and margin on smaller screens */
+    }
+}
